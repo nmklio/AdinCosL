@@ -1,0 +1,24 @@
+*.iml
+.gradle/
+.idea/
+.kotlin/
+/build/
+/app/build/
+/local.properties
+local.properties
+
+# Android generated files
+captures/
+*.apk
+*.ap_
+*.aab
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Local automation logs
+sync-github.log
