@@ -66,6 +66,9 @@ git commit -m $commitMessage
 
 try {
     git push
+    if ($LASTEXITCODE -ne 0) {
+        throw "git push exited with code $LASTEXITCODE"
+    }
     Write-SyncLog "Synced with git push: $commitMessage"
 } catch {
     Write-SyncLog "git push failed, falling back to GitHub API: $($_.Exception.Message)"
