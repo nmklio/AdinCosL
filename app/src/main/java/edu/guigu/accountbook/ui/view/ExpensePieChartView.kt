@@ -20,7 +20,7 @@ class ExpensePieChartView @JvmOverloads constructor(
 ) : View(context, attrs, defStyleAttr) {
 
     private val backgroundPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-        color = Color.parseColor("#D9D9D9")
+        color = Color.WHITE
         style = Paint.Style.FILL
     }
 
