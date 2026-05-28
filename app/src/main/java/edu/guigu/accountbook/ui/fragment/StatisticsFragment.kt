@@ -85,9 +85,14 @@ class StatisticsFragment : Fragment() {
     private fun createCategoryLine(summary: CategorySummary, total: Double): View {
         val context = requireContext()
         val percent = if (total > 0) summary.total / total * 100 else 0.0
+        val percentText = if (percent > 0.0 && percent < 1.0) {
+            String.format(Locale.CHINA, "%.1f%%", percent)
+        } else {
+            String.format(Locale.CHINA, "%.0f%%", percent)
+        }
 
         return TextView(context).apply {
-            text = "• ${summary.category}: ¥${DateUtils.formatAmount(summary.total)} (${String.format(Locale.CHINA, "%.0f%%", percent)})"
+            text = "• ${summary.category}: ¥${DateUtils.formatAmount(summary.total)} ($percentText)"
             setTextColor(android.graphics.Color.parseColor("#555555"))
             textSize = 12f
             setPadding(0, dp(2), 0, dp(2))
