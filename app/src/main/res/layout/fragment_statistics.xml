@@ -144,11 +144,27 @@
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
-                <View
+                <edu.guigu.accountbook.ui.view.ExpensePieChartView
                     android:id="@+id/pie_chart"
                     android:layout_width="match_parent"
-                    android:layout_height="260dp"
+                    android:layout_height="205dp"
                     android:layout_marginTop="12dp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_category_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" />
+
+                <TextView
+                    android:id="@+id/tv_category_empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="暂无支出记录"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
