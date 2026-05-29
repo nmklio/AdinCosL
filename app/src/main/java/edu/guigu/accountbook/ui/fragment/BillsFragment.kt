@@ -64,14 +64,6 @@ class BillsFragment : Fragment() {
 
     private fun setupFilter() {
         binding.chipFilter.setOnClickListener { showMonthPicker() }
-        binding.chipFilter.setOnLongClickListener {
-            toggleSearchView()
-            true
-        }
-        binding.tvRecordsTitle.setOnLongClickListener {
-            toggleSearchView()
-            true
-        }
         binding.chipFilter.setOnCloseIconClickListener { clearMonthFilter() }
     }
 
@@ -88,19 +80,6 @@ class BillsFragment : Fragment() {
                 return true
             }
         })
-    }
-
-    private fun toggleSearchView() {
-        val showSearch = binding.searchView.visibility != View.VISIBLE
-        binding.searchView.visibility = if (showSearch) View.VISIBLE else View.GONE
-        if (showSearch) {
-            binding.searchView.requestFocus()
-            binding.searchView.isIconified = false
-        } else {
-            binding.searchView.setQuery("", false)
-            binding.searchView.clearFocus()
-            viewModel.searchRecords("")
-        }
     }
 
     private fun showMonthPicker() {
