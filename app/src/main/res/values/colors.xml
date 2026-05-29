@@ -9,5 +9,7 @@
     <color name="expense_red">#E74C3C</color>
     <color name="balance_blue">#3498DB</color>
     <color name="bg_light">#F5F6FA</color>
+    <color name="stats_panel">#F1F0FF</color>
+    <color name="stats_divider">#E1E0EE</color>
     <color name="text_secondary">#999999</color>
 </resources>

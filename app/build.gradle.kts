@@ -22,34 +22,29 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+
     kotlinOptions {
         jvmTarget = "11"
     }
+
     buildFeatures {
         viewBinding = true
     }
 }
 
 dependencies {
-    // 基础库
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    // Room 数据库
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)
     ksp(libs.androidx.room.compiler)
-    // MVVM
     implementation(libs.androidx.lifecycle.viewmodel)
     implementation(libs.androidx.lifecycle.livedata)
-    // Fragment
     implementation(libs.androidx.fragment.ktx)
-    // ViewPager2（Tab 切换）
     implementation(libs.androidx.viewpager2)
-    // RecyclerView（账单列表）
     implementation(libs.androidx.recyclerview)
-    // 图表库
-    // implementation(libs.mpandroidchart)
+    implementation(libs.mpandroidchart)
 }

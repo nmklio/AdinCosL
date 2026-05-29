@@ -6,6 +6,7 @@
     <string name="month_expense">本月支出</string>
     <string name="month_balance">本月结余</string>
     <string name="expense_breakdown">支出分类统计</string>
+    <string name="monthly_trend">月度收支趋势</string>
     <string name="recent_records">最近记录</string>
     <string name="add_record">添加记录</string>
     <string name="edit_record">编辑记录</string>
@@ -14,4 +15,6 @@
     <string name="delete">删除</string>
     <string name="confirm_delete">确认删除这条记录吗？</string>
     <string name="no_records">暂无记录，点击右下角 + 添加</string>
+    <string name="filter_month">筛选月份</string>
+    <string name="search_hint">搜索分类或备注…</string>
 </resources>

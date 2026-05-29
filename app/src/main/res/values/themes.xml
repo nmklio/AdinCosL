@@ -7,4 +7,9 @@
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:navigationBarColor">@color/bg_light</item>
     </style>
+
+    <style name="ShapeAppearance.AccountBook.AddFab" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">18dp</item>
+    </style>
 </resources>
